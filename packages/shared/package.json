@@ -1,0 +1,29 @@
+        {
+            "name": "@repo/shared",
+            "author": "decho",
+            "version": "1.0.0",
+            "description": "Shared",
+            "license": "ISC",
+            "type": "module",
+            "exports": {
+                ".": {
+                    "import": "./out/main.js"
+                },
+                "./other": {
+                    "import": "./out/other.js"
+                }
+            },
+            "typesVersions": {
+                ">=3.1": {
+                    "*": ["./src/main.ts"],
+                    "other": ["./src/other.ts"]
+                }
+            },
+            "scripts": {
+                "build": "node esbuild.js"
+            },
+            "devDependencies": {
+                "esbuild": "^0.14.48",
+                "fast-glob": "^3.2.11"
+            }
+        }

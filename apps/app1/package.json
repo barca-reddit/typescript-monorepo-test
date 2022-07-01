@@ -1,0 +1,19 @@
+{
+    "name": "@repo/app1",
+    "author": "decho",
+    "version": "1.0.0",
+    "description": "App 1",
+    "license": "ISC",
+    "type": "module",
+    "scripts": {
+        "build": "node esbuild.js",
+        "start": "node out/main.js"
+    },
+    "dependencies": {
+        "@repo/shared": "*"
+    },
+    "devDependencies": {
+        "esbuild": "^0.14.48",
+        "fast-glob": "^3.2.11"
+    }
+}
